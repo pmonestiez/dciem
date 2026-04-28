@@ -264,7 +264,7 @@ img.MathJax_strut {border: 0!important; padding: 0!important; margin: 0!importan
 .MathJax .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
 </style></head>
 <body class="quarto-light reveal-viewport" style="transition: transform 0.8s; --slide-width: 1050px; --slide-height: 700px; --slide-scale: 1.3152857142857144; --viewport-width: 1869px; --viewport-height: 1023px;"><div style="visibility: hidden; overflow: hidden; position: absolute; top: 0px; height: 1px; width: auto; padding: 0px; border: 0px; margin: 0px; text-align: left; text-indent: 0px; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal;"><div id="MathJax_Hidden"><br><br></div></div><div id="MathJax_Message" style="display: none;"></div>
-  <div class="reveal has-logo fade focused has-horizontal-slides ready" role="application" data-transition-speed="default" data-background-transition="none" data-navigation-mode="linear" style="">
+  <div class="reveal has-logo fade focused has-horizontal-slides ready" role="application" data-transition-speed="default" data-background-transition="none" data-navigation-mode="linear" style="cursor: none;">
     <div class="slides" style="width: 1050px; height: 700px; inset: 50% auto auto 50%; transform: translate(-50%, -50%) scale(1.31529);">
 
 <section id="title-slide" class="quarto-title-block center present" style="top: 100.5px; display: block;">
@@ -427,8 +427,8 @@ deux coefficients chacun, l’équivalent des <em>a</em> et <em>b</em> de Bühlm
 <li><strong>Les limites SAD (Safe Ascent Depth)</strong> sont calculées comme des pressions limites (SC) du compartiment, donc <strong>DONNENT directement les profondeurs de palier</strong> si on soustrait la Patm (ou Psl ou P at sea level).</li>
 </ul>
 <p style="text-align:center;">
-<span class="warning_large">Déconcertant mais efficace</span>
-</p>
+</p><p><span class="warning_large">Déconcertant mais efficace</span></p>
+<p></p>
 <div class="footer">
 <p>Pascal Monestiez, Avril 2026, CC BY NC</p>
 </div>
@@ -488,16 +488,15 @@ Il y a dissymétrie entre charge et décharge</span> <span class="warning">&nbsp
 </ul>
 <div class="fragment" data-fragment-index="0">
 <ul>
-<li><strong>Une résolution numérique est nécessaire</strong> (comme le pas de temps est grand, c-a-d.&nbsp;1 minute, Kidd et Stubbs utilisent un Runge-Kutta d’ordre 4)<sup>*</sup></li>
+<li><strong>Une résolution numérique est nécessaire</strong> (comme le pas de temps est grand, c-a-d.&nbsp;1 minute, Kidd et Stubbs utilisent un Runge-Kutta d’ordre 4)^*^</li>
 </ul>
 <div class="info">
 <p><span class="small-text"><strong>Nishi R. Y. et Kuehn L.A. (1973)</strong> Digital computation of decompression profile. In DCIEM Report n° 884 23pp. (incluant le code FORTRAN en appendix)</span></p>
 </div>
 <div class="info">
-<p><span class="small-text"><sup>*</sup> les ordis actuels avec un pas 
-fin de quelques secondes (généralement non communiqué par le 
-constructeur) utilisent probablement un Runge-Kutta d’ordre 1 plus 
-simple</span></p>
+<p><span class="small-text">^*^ les ordis actuels avec un pas fin de 
+quelques secondes (généralement non communiqué par le constructeur) 
+utilisent probablement un Runge-Kutta d’ordre 1 plus simple</span></p>
 </div>
 <div class="footer">
 <p>Pascal Monestiez, Avril 2026, CC BY NC</p>
@@ -512,8 +511,8 @@ simple</span></p>
 <li><p>Une approximation donne pour Pi (initiale) et Pf (finale)</p></li>
 </ul>
 <p style="text-align:center;">
-<strong>T<sub>1/2</sub> = ln ( 2 – (Pf – Pi) / (B + Pi + Pf )) / (A (B + 2 Pf ))</strong>
-</p>
+</p><p><strong>T<sub>1/2</sub> = ln ( 2 – (Pf – Pi) / (B + Pi + Pf )) / (A (B + 2 Pf ))</strong></p>
+<p></p>
 <div class="columns"><div class="column" style="width:52%;">
 <p><strong>La pseudo-période T<sub>1/2</sub> dépend de Pi et Pf</strong></p>
 <ul>
@@ -558,10 +557,10 @@ biological Engeneering, 11, 135-137</p>
 <h2>Et les successives alors ?</h2>
 <ul>
 <li><p>Le DCIEM <strong>n’utilise pas de procédure type «&nbsp;majoration&nbsp;»</strong> calculée sur les compartiments lents (MN90 T=120mn, Tables Buhlmann 1987 T=77mn)</p></li>
-<li><p><strong>Il calcule vraiment les successives à partir de son modèle</strong>
+<li><p><span class="warning"><strong>Il calcule vraiment les successives à partir de son modèle</strong></span>
  : les compartiments P3 et P4 continuent à se charger bien après le 
 retour en surface et sont encore chargés au début de la seconde plongée</p></li>
-<li><p>Exemple : Simulation de plongées successives avec le DCIEM</p></li>
+<li><p><a href="https://pmonestiez.github.io/dciem/anim21"><strong>Exemple de simulation de plongées successives</strong></a> avec le DCIEM</p></li>
 <li><p><span class="medium-text">Les tables DCIEM (<strong>DCIEM Diving Manual, 1992</strong>)
  peuvent induire en erreur avec des «&nbsp;groupes de 
 successives&nbsp;». Ils ne sont pas utilisés pour le calcul de 
